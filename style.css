@@ -1,0 +1,18 @@
+body {
+  font-family: "Barlow Condensed", sans-serif !important;
+  text-align: center;
+  background-color: rgb(64, 223, 175);
+}
+
+.title {
+  font-size: 100px;
+  color: rgb(64, 223, 175);
+  font-weight: 700;
+  margin-bottom: -35px;
+}
+
+.subtitle {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
