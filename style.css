@@ -16,3 +16,12 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
 }
+
+.title2 {
+  color: white;
+  font-weight: 600;
+}
+
+.text1 {
+  color: white;
+}
