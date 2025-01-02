@@ -5,16 +5,17 @@ body {
 }
 
 .title {
-  font-size: 100px;
-  color: rgb(64, 223, 175);
+  font-size: 4rem;
   font-weight: 700;
-  margin-bottom: -35px;
+  color: rgb(64, 223, 175);
+  text-transform: uppercase;
+  margin-bottom: -20px;
 }
 
 .subtitle {
-  font-size: 25px;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .title2 {
@@ -33,4 +34,35 @@ body {
 
 .nav-link:hover {
   color: rgb(64, 223, 175); /* Changes to desired color */
+}
+
+/* Adjusting the navbars to be more responsive */
+.navbar-nav {
+  flex-direction: row;
+}
+
+/* First Navbar - Flex adjustments */
+@media (max-width: 767px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
+    padding: 10px 0;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    padding: 10px 0;
+    font-size: 1.2rem;
+  }
+}
+
+/* Adjusting the second navbar to be more readable on small screens */
+@media (max-width: 767px) {
+  .nav-link.display-6 {
+    font-size: 1.5rem;
+    padding: 10px 0;
+  }
+  .col-12.col-lg {
+    padding: 10px 0;
+  }
 }
