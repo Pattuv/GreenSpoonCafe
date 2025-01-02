@@ -25,3 +25,12 @@ body {
 .text1 {
   color: white;
 }
+
+.nav-link {
+  transition: color 0.3s ease;
+  color: inherit; /* Keeps the original color */
+}
+
+.nav-link:hover {
+  color: rgb(64, 223, 175); /* Changes to desired color */
+}
