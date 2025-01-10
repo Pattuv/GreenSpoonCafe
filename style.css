@@ -43,6 +43,12 @@ body {
   border-radius: 40px !important;
 }
 
+.sectiondiv {
+  margin-top: 50px;
+  background-color: rgb(64, 223, 175);
+  text-align: center;
+}
+
 @media (max-width: 767px) {
   .navbar-nav {
     flex-direction: column;
