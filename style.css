@@ -1,6 +1,15 @@
 body {
+  font-family: "Lexend", sans-serif;
+  text-align: center;
+}
+
+.barlow {
   font-family: "Barlow Condensed", sans-serif !important;
   text-align: center;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 @keyframes fadeIn {
@@ -114,7 +123,6 @@ body {
   padding-right: 10px;
 }
 .emblem {
-  height: auto; /* Allow proportional scaling */
   max-width: 100%; /* Prevent overflow */
   display: block; /* Centers the image inside its container */
   margin: 0 auto; /* Center the image horizontally */
