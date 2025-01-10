@@ -37,6 +37,11 @@ body {
   text-transform: uppercase;
 }
 
+.invislink {
+  text-decoration: none;
+  color: black;
+}
+
 .title2 {
   color: #abffe6;
   font-weight: 600;
