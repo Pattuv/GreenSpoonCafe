@@ -1,7 +1,6 @@
 body {
   font-family: "Barlow Condensed", sans-serif !important;
   text-align: center;
-  background-color: rgb(64, 223, 175);
 }
 
 .title {
@@ -19,29 +18,31 @@ body {
 }
 
 .title2 {
-  color: white;
+  color: rgb(64, 223, 175);
   font-weight: 600;
 }
 
 .text1 {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .nav-link {
   transition: color 0.3s ease;
-  color: inherit; /* Keeps the original color */
+  color: inherit;
 }
 
 .nav-link:hover {
-  color: rgb(64, 223, 175); /* Changes to desired color */
+  color: rgb(64, 223, 175);
 }
 
-/* Adjusting the navbars to be more responsive */
 .navbar-nav {
   flex-direction: row;
 }
 
-/* First Navbar - Flex adjustments */
+.rounded {
+  border-radius: 40px !important;
+}
+
 @media (max-width: 767px) {
   .navbar-nav {
     flex-direction: column;
@@ -56,7 +57,6 @@ body {
   }
 }
 
-/* Adjusting the second navbar to be more readable on small screens */
 @media (max-width: 767px) {
   .nav-link.display-6 {
     font-size: 1.5rem;
