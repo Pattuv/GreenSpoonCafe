@@ -88,6 +88,12 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
+.emblem {
+  height: auto; /* Allow proportional scaling */
+  max-width: 100%; /* Prevent overflow */
+  display: block; /* Centers the image inside its container */
+  margin: 0 auto; /* Center the image horizontally */
+}
 
 .btn-brand {
   display: flex; /* Enables flexbox */
