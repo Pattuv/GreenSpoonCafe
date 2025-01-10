@@ -23,6 +23,27 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <style>
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in {
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+      }
+
+      .visible {
+        opacity: 1;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
@@ -69,14 +90,14 @@
     <div class="container mt-5">
       <div class="row align-items-center">
         <div class="col-md-6 text-center text-md-start">
-          <h2 class="display-4 title2">Redefining Indian Food</h2>
-          <p class="lead text1">
+          <h2 class="display-4 title2 fade-in">Redefining Indian Food</h2>
+          <p class="lead text1 fade-in">
             Experience a fresh take on authentic flavors with a modern twist.
             Indulge in flavorful meals prepared by top notch chefs, using
             ingredients prepared with the planet in mind.
           </p>
         </div>
-        <div class="col-md-6 text-center">
+        <div class="col-md-6 text-center fade-in">
           <div
             id="carouselExampleIndicators"
             class="carousel slide"
@@ -157,108 +178,154 @@
       </div>
     </div>
 
-    <div class="sectiondiv">
-      <p class="display-4 text-center" style="font-weight: 600">
-        POPULAR ITEMS
-      </p>
-      <div class="row">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
-          <div class="card">
+    <div class="container mt-5">
+      <div class="container mt-5 border-div">
+        <p class="display-2 fade-in">The Planet Comes First.</p>
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="fs-3 fade-in">
+              Here at GreenSpoon Cafe, we value sustainably and the environment.
+              Our farm-to-table practcices ensure efficiency to provide
+              customers with a quality restaurant experience, while taking care
+              of the planet.
+            </p>
+            <a href="#" class="btn btn-primary btn-brand">Learn More</a>
+          </div>
+          <div class="col-md-6 text-center fade-in">
             <img
-              src="assets/food/shahi paneer.jpg"
-              class="card-img-top"
+              src="assets/emblem.png"
+              class="card-img-top rounded"
               alt="Card Image"
+              style="height: 400px; width: auto"
             />
-            <div class="card-body">
-              <h5 class="card-title">Shahi Paneer</h5>
-              <p class="card-text">
-                Vegetarian curry with cottage cheese and spices. *Best eaten
-                with naan.
-              </p>
-            </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
-          <div class="card">
-            <img
-              src="assets/food/naan.jpg"
-              class="card-img-top"
-              alt="Card Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Butter Naan</h5>
-              <p class="card-text">
-                Whole weat sustainably baked bread lathered in butter. *Eat with
-                gravy or sides.
-              </p>
+      </div>
+
+      <div class="sectiondiv fade-in">
+        <p class="display-4 text-center" style="font-weight: 600">
+          POPULAR ITEMS
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card rounded-lg shadow-sm">
+              <img
+                src="assets/food/shahi paneer.jpg"
+                class="card-img-top rounded-top"
+                alt="Card Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Shahi Paneer</h5>
+                <p class="card-text">
+                  Vegetarian curry with cottage cheese and spices. *Best eaten
+                  with naan.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
-          <div class="card">
-            <img
-              src="assets/food/pani puri.jpg"
-              class="card-img-top"
-              alt="Card Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Pani Puri</h5>
-              <p class="card-text">
-                Hollow wafers filled with mashed potatoes, onions, and/or
-                chickpeas, with spicy green water on the side.
-              </p>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card rounded-lg shadow-sm">
+              <img
+                src="assets/food/naan.jpg"
+                class="card-img-top rounded-top"
+                alt="Card Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Butter Naan</h5>
+                <p class="card-text">
+                  Whole wheat sustainably baked bread lathered in butter. *Eat
+                  with gravy or sides.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
-          <div class="card">
-            <img
-              src="assets/food/veg biryani.jpg"
-              class="card-img-top"
-              alt="Card Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Biryani (Veg)</h5>
-              <p class="card-text">
-                Flavored Basmati™ rice mixed with Garam Masala, spices, and
-                vegetables.
-              </p>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card rounded-lg shadow-sm">
+              <img
+                src="assets/food/pani puri.jpg"
+                class="card-img-top rounded-top"
+                alt="Card Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pani Puri</h5>
+                <p class="card-text">
+                  Hollow wafers filled with mashed potatoes, onions, and/or
+                  chickpeas, with spicy green water on the side.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
-          <div class="card">
-            <img
-              src="assets/food/gobi555.jpg"
-              class="card-img-top"
-              alt="Card Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Gobi 555</h5>
-              <p class="card-text">
-                Cauliflower fried and lathered in spicy curd sauce. *Top choice
-                of starter at GreenSpoon Cafe.
-              </p>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card rounded-lg shadow-sm">
+              <img
+                src="assets/food/veg biryani.jpg"
+                class="card-img-top rounded-top"
+                alt="Card Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Biryani (Veg)</h5>
+                <p class="card-text">
+                  Flavored Basmati™ rice mixed with Garam Masala, spices, and
+                  vegetables.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
-          <div class="card">
-            <img
-              src="assets/food/samosa.jpg"
-              class="card-img-top"
-              alt="Card Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Samosa</h5>
-              <p class="card-text">
-                Battered bread bites filled with mashed potato, masala, peas,
-                and chillis. *Served with chutney of choice.
-              </p>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card rounded-lg shadow-sm">
+              <img
+                src="assets/food/gobi555.jpg"
+                class="card-img-top rounded-top"
+                alt="Card Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Gobi 555</h5>
+                <p class="card-text">
+                  Cauliflower fried and lathered in spicy curd sauce. *Top
+                  choice of starter at GreenSpoon Cafe.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card rounded-lg shadow-sm">
+              <img
+                src="assets/food/samosa.jpg"
+                class="card-img-top rounded-top"
+                alt="Card Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Samosa</h5>
+                <p class="card-text">
+                  Battered bread bites filled with mashed potato, masala, peas,
+                  and chillis. *Served with chutney of choice.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      $(document).ready(function () {
+        function isInViewport(el) {
+          var rect = el.getBoundingClientRect();
+          return rect.top <= window.innerHeight && rect.bottom >= 0;
+        }
+
+        function onScroll() {
+          $(".fade-in").each(function () {
+            if (isInViewport(this)) {
+              $(this).addClass("visible");
+            }
+          });
+        }
+
+        $(window).on("scroll", onScroll);
+
+        onScroll();
+      });
+    </script>
   </body>
 </html>

@@ -6,7 +6,7 @@ body {
 .title {
   font-size: 4rem;
   font-weight: 700;
-  color: rgb(64, 223, 175);
+  color: #abffe6;
   text-transform: uppercase;
   margin-bottom: -20px;
 }
@@ -18,7 +18,7 @@ body {
 }
 
 .title2 {
-  color: rgb(64, 223, 175);
+  color: #abffe6;
   font-weight: 600;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 .nav-link:hover {
-  color: rgb(64, 223, 175);
+  color: #abffe6;
 }
 
 .navbar-nav {
@@ -45,8 +45,89 @@ body {
 
 .sectiondiv {
   margin-top: 50px;
-  background-color: rgb(64, 223, 175);
+  margin-bottom: 50px;
+  background-color: #abffe6;
   text-align: center;
+  border-radius: 40px;
+}
+
+.border-div {
+  border-top: 2px solid #abffe6; /* Top border */
+  border-bottom: 2px solid #abffe6; /* Bottom border */
+  padding: 20px; /* Optional: Adds padding inside the div */
+  margin-bottom: 50px;
+}
+
+/* Ensure uniform card sizes and more space between them */
+.card {
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* To ensure rounded corners on images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight elevation on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-img-top {
+  border-bottom: 2px solid #f8f9fa; /* Light border between image and content */
+  object-fit: cover; /* Ensure image covers the area without distortion */
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.col-12 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.btn-brand {
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  width: 200px;
+  height: 75px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #abffe6;
+  border: none;
+  color: black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+.btn-brand:hover {
+  background-color: #abffe6;
+  border: none;
+  color: black;
+  transform: translateY(-5px); /* Slight elevation on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+/* For responsive layout and ensuring no squishing */
+@media (min-width: 576px) {
+  .col-sm-6 {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-4 {
+    max-width: 33.33%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-3 {
+    max-width: 25%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -61,14 +142,23 @@ body {
     padding: 10px 0;
     font-size: 1.2rem;
   }
-}
-
-@media (max-width: 767px) {
   .nav-link.display-6 {
     font-size: 1.5rem;
     padding: 10px 0;
   }
   .col-12.col-lg {
     padding: 10px 0;
+  }
+  .border-div .row {
+    flex-direction: column; /* Stack the elements vertically */
+    text-align: center; /* Center the text */
+  }
+
+  .border-div .col-md-6 {
+    margin-bottom: 20px; /* Add spacing between elements */
+  }
+
+  .btn-brand {
+    margin: 20px auto; /* Center the button horizontally */
   }
 }
