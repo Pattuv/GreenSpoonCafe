@@ -35,7 +35,7 @@ body {
 .title {
   font-size: 4rem;
   font-weight: 700;
-  color: #abffe6;
+  color: #00ffb3;
   text-transform: uppercase;
   margin-bottom: -20px;
 }
@@ -52,7 +52,7 @@ body {
 }
 
 .title2 {
-  color: #abffe6;
+  color: #00ffb3;
   font-weight: 600;
 }
 
@@ -66,7 +66,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #abffe6;
+  color: #00ffb3;
 }
 
 .navbar-nav {
@@ -80,14 +80,14 @@ body {
 .sectiondiv {
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: #abffe6;
+  background-color: #00ffb3;
   text-align: center;
   border-radius: 40px;
 }
 
 .border-div {
-  border-top: 2px solid #abffe6; /* Top border */
-  border-bottom: 2px solid #abffe6; /* Bottom border */
+  border-top: 2px solid #00ffb3; /* Top border */
+  border-bottom: 2px solid #00ffb3; /* Bottom border */
   padding: 20px; /* Optional: Adds padding inside the div */
   margin-bottom: 50px;
 }
@@ -136,14 +136,14 @@ body {
   height: 75px;
   font-size: 25px;
   text-align: center;
-  background-color: #abffe6;
+  background-color: #00ffb3;
   border: none;
   color: black;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
 }
 
 .btn-brand:hover {
-  background-color: #abffe6;
+  background-color: #00ffb3;
   border: none;
   color: black;
   transform: translateY(-5px); /* Slight elevation on hover */
