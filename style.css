@@ -150,6 +150,14 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
 }
 
+.btn-brand:active {
+  background-color: #00ffb3 !important;
+  border: none;
+  color: black !important;
+  transform: translateY(-5px); /* Slight elevation on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
 /* For responsive layout and ensuring no squishing */
 @media (min-width: 576px) {
   .col-sm-6 {
