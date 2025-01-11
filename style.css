@@ -86,22 +86,21 @@ body {
 }
 
 .border-div {
-  border-top: 2px solid #00ffb3; /* Top border */
-  border-bottom: 2px solid #00ffb3; /* Bottom border */
-  padding: 20px; /* Optional: Adds padding inside the div */
+  border-top: 2px solid #00ffb3;
+  border-bottom: 2px solid #00ffb3;
+  padding: 20px;
   margin-bottom: 50px;
 }
 
-/* Ensure uniform card sizes and more space between them */
 .card {
-  border-radius: 15px; /* Rounded corners */
-  overflow: hidden; /* To ensure rounded corners on images */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Slight elevation on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-body {
@@ -109,8 +108,8 @@ body {
 }
 
 .card-img-top {
-  border-bottom: 2px solid #f8f9fa; /* Light border between image and content */
-  object-fit: cover; /* Ensure image covers the area without distortion */
+  border-bottom: 2px solid #f8f9fa;
+  object-fit: cover;
 }
 
 .row {
@@ -123,15 +122,15 @@ body {
   padding-right: 10px;
 }
 .emblem {
-  max-width: 100%; /* Prevent overflow */
-  display: block; /* Centers the image inside its container */
-  margin: 0 auto; /* Center the image horizontally */
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .btn-brand {
-  display: flex; /* Enables flexbox */
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 75px;
   font-size: 25px;
@@ -139,76 +138,120 @@ body {
   background-color: #00ffb3;
   border: none;
   color: black;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-brand:hover {
   background-color: #00ffb3;
   border: none;
   color: black;
-  transform: translateY(-5px); /* Slight elevation on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .btn-brand:active {
   background-color: #00ffb3 !important;
   border: none;
   color: black !important;
-  transform: translateY(-5px); /* Slight elevation on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .border-div {
-  display: flex; /* Flexbox layout to position the images and text */
-  align-items: center; /* Vertically center content */
-  justify-content: center; /* Horizontally center the content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   padding: 20px;
-  overflow: hidden; /* Hide the overflowed part of the images */
+  overflow: hidden;
 }
 
 .text-container {
-  text-align: center; /* Center the text inside the container */
-  z-index: 1; /* Ensure the text appears above the images */
+  text-align: center;
+  z-index: 1;
   position: relative;
 }
 
 .img-container-left,
 .img-container-right {
-  flex: 1; /* Each container takes equal space */
-  overflow: hidden; /* Hide the part of the image that overflows */
-  height: 100%; /* Make sure images fill the height of the container */
+  flex: 1;
+  overflow: hidden;
+  height: 100%;
 }
 
 .border-div-img-left {
-  width: 125%; /* Make the image large enough to overflow */
-  object-fit: cover; /* Ensure the image covers the area without stretching */
-  height: 100%; /* Ensure it covers the entire height */
+  width: 125%;
+  object-fit: cover;
+  height: 100%;
 
-  transform: translateX(
-    -25%
-  ); /* Move the image left so it's cropped on the left side */
+  transform: translateX(-25%);
 }
 
 .border-div-img-right {
-  width: 150%; /* Make the image large enough to overflow */
-  object-fit: cover; /* Ensure the image covers the area without stretching */
-  height: 100%; /* Ensure it covers the entire height */
+  width: 150%;
+  object-fit: cover;
+  height: 100%;
 
-  transform: translateX(
-    25%
-  ); /* Move the image right so it's cropped on the right side */
+  transform: translateX(25%);
 }
 
 .img-container-left {
-  padding-right: 10px; /* Add space between the left image and the text */
+  padding-right: 10px;
 }
 
 .img-container-right {
-  padding-left: 10px; /* Add space between the right image and the text */
+  padding-left: 10px;
 }
 
-/* For responsive layout and ensuring no squishing */
+.menu-section {
+  margin-bottom: 50px;
+}
+
+.menu-section h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #00ffb3;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-img-top {
+  border-bottom: 2px solid #f8f9fa;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .col-sm-6 {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-4 {
+    max-width: 33.33%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-3 {
+    max-width: 25%;
+  }
+}
+
 @media (min-width: 576px) {
   .col-sm-6 {
     max-width: 50%;
@@ -257,5 +300,8 @@ body {
 
   .btn-brand {
     margin: 20px auto; /* Center the button horizontally */
+  }
+  .col-12.col-sm-6 {
+    max-width: 50%; /* Two items per row */
   }
 }
