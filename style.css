@@ -290,18 +290,18 @@ body {
     padding: 10px 0;
   }
   .border-div .row {
-    flex-direction: column; /* Stack the elements vertically */
-    text-align: center; /* Center the text */
+    flex-direction: column;
+    text-align: center;
   }
 
   .border-div .col-md-6 {
-    margin-bottom: 20px; /* Add spacing between elements */
+    margin-bottom: 20px;
   }
 
   .btn-brand {
-    margin: 20px auto; /* Center the button horizontally */
+    margin: 20px auto;
   }
   .col-12.col-sm-6 {
-    max-width: 50%; /* Two items per row */
+    max-width: 50%;
   }
 }
