@@ -157,6 +157,35 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.btn-submit {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #00ffb3;
+  border: none;
+  color: black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.btn-submit:hover {
+  background-color: #00ffb3;
+  border: none;
+  color: black;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-submit:active {
+  background-color: #00ffb3 !important;
+  border: none;
+  color: black !important;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .border-div {
   display: flex;
   align-items: center;
@@ -304,4 +333,11 @@ body {
   .col-12.col-sm-6 {
     max-width: 50%;
   }
+}
+
+input,
+.form-el {
+  width: 20rem;
+  border-radius: 5px;
+  border: solid 2px #00ffb3;
 }

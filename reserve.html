@@ -75,10 +75,69 @@
     </nav>
 
     <p
-      class="display-3 bold fade-in"
+      class="display-5 bold fade-in"
       style="margin-top: 40px; font-weight: 600"
     >
-      Coming Soon!
+      Reserve A Table
     </p>
+
+    <p class="fade-in fs-5">
+      Reserve a table ahead of time at one of our <br />locations so you don't
+      miss out!
+    </p>
+
+    <form class="fade-in" action="" id="reservationForm">
+      <p style="margin-bottom: 0px">Choose a Location</p>
+      <div style="margin-bottom: 30px">
+        <select name="location" id="loc" class="form-el" required>
+          <option value="option1">Suwanee, GA</option>
+          <option value="option2">Athens, GA</option>
+          <option value="option3">Atlanta, GA</option>
+          <option value="option4">Charlotte, NC</option>
+          <option value="option5">Nashville, TN</option>
+          <option value="option6">Memphis, TN</option>
+          <option value="option7">Greensboro, NC</option>
+        </select>
+      </div>
+
+      <input
+        type="email"
+        class="form-el"
+        placeholder="Enter your email"
+        style="margin-bottom: 30px"
+        required
+      />
+      <p style="margin-bottom: 0px">Pick a Time Slot</p>
+      <div>
+        <select id="timeSlots" name="timeSlots" class="form-el" required>
+          <option value="9-10am">9:00 AM - 10:00 AM</option>
+          <option value="10-11am">10:00 AM - 11:00 AM</option>
+          <option value="11-12pm">11:00 AM - 12:00 PM</option>
+          <option value="12-1pm">12:00 PM - 1:00 PM</option>
+          <option value="1-2pm">1:00 PM - 2:00 PM</option>
+          <option value="2-3pm">2:00 PM - 3:00 PM</option>
+          <option value="3-4pm">3:00 PM - 4:00 PM</option>
+          <option value="4-5pm">4:00 PM - 5:00 PM</option>
+        </select>
+      </div>
+
+      <p style="color: grey; margin-top: 30px">
+        *We will reach out to you if your time slot is available.
+      </p>
+
+      <button class="btn btn-submit" type="submit">Request Reservation</button>
+    </form>
+
+    <script>
+      const form = document.getElementById("reservationForm");
+      const successMessage = document.getElementById("successMessage");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form from reloading the page
+
+        // Show success message and apply the fade-in animation
+        alert("Reservation Placed!");
+      });
+    </script>
   </body>
 </html>
