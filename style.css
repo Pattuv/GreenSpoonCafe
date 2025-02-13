@@ -263,6 +263,21 @@ body {
   object-fit: cover;
 }
 
+input,
+.form-el {
+  width: 20rem;
+  border-radius: 5px;
+  border: solid 2px #00ffb3;
+}
+
+.card {
+  border-color: #00ffb3;
+}
+
+.card-body {
+  height: 200px;
+}
+
 @media (min-width: 768px) {
   .col-sm-6 {
     max-width: 50%;
@@ -284,6 +299,18 @@ body {
 @media (min-width: 576px) {
   .col-sm-6 {
     max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-body {
+    height: 250px;
+  }
+}
+
+@media (max-width: 476px) {
+  .card-body {
+    height: 270px;
   }
 }
 
@@ -333,11 +360,4 @@ body {
   .col-12.col-sm-6 {
     max-width: 50%;
   }
-}
-
-input,
-.form-el {
-  width: 20rem;
-  border-radius: 5px;
-  border: solid 2px #00ffb3;
 }
