@@ -11,6 +11,19 @@ body {
 .bold {
   font-weight: 600;
 }
+.carousel-item img {
+  width: 100%; /* Ensures images are responsive */
+  height: 300px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures images fit without distortion */
+  border-radius: 10px; /* Optional: Rounded edges */
+}
+.card-img-top {
+  width: 100%; /* Makes images responsive */
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures images fill the frame without distortion */
+
+  border-radius: 10px; /* Optional: Rounded edges */
+}
 
 @keyframes fadeIn {
   0% {
