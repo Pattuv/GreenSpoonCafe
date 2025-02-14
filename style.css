@@ -45,6 +45,11 @@ body {
   opacity: 1;
 }
 
+.btn-menu {
+  width: 200px;
+  background-color: white !important;
+}
+
 .title {
   font-size: 4rem;
   font-weight: 700;
